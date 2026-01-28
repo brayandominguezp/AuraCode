@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="AuraCode" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="/estilos/estilos.css">
+    <title>AuraCode-Presupuesto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="menu">
+                <span>
+                    <a href="/index.html" class="tres" >Inicio</a>
+                </span>
+                <span>
+                    <a href="productos.html" class="tres">Productos</a>
+                </span>
+                <span>
+                    <a href="#" class="tres der active">Presupuesto</a>
+                </span>
+                <span>
+                    <a href="contacto.html" class="contac">Contacto</a>
+                </span>
+            </div>
+        </nav>
+        <div>
+            <a href="/index.html"><img id="img_header" src="/images/logocompleto.jpg" alt="Logo" title="Logo" width="250px" height="100px"></a>
+        </div>
+    </header>
+    <section>
+        <div id="div_principal">
+            <article>
+                <header>
+                    <span id="img-formu">
+                        <img src="/images/avance.jpg" alt="avance" width="350px" >
+                    </span>
+                    <h1 class="titulo"> Creamos valor hoy para liderar el mañana</h1>
+                </header>
+                <span">
+                    <form id="formu" name="formu" action="https://formsubmit.co/brayan.dominguezp@gmail.com" method="post" target="_self">
+                        <ul class="flex-outer">
+                            <ol>
+                                <h2> Hagamos realidad tu idea. Cuéntanos qué necesitas y te enviaremos una propuesta personalizada para diseñar un sitio web que impulse tus resultados hoy mismo</h2>
+                            </ol>
+                            <li>
+                                <label for="name">NOMBRE: </label>
+                                <input type="text" id="name" name="name" placeholder="Nombre (requerido)" pattern="[A-Z a-z]{3,25}" title="Escriba solo letras entre 3 y 25 caracteres" required>
+                            </li>
+                            <li>
+                                <label for="email">E-MAIL:</label>
+                                <input type="text" id="email" name="email" placeholder="Direccion@correo.com (requerido)" pattern="[a-zA-Z0-9_-.]+@[a-z0-9.-_]+\.[a-z]{2,4}" title="Escriba su correo electronico" required>
+                            </li>
+                            <li>
+                                <label for="telephone">TELEFONO DE CONTACTO: </label>
+                                <input type="number" id="telephone" name="telephone" placeholder="Telefono (requerido)" pattern="[0-9]{9}" title="Escriba solo 9 numeros de su telefono movil" required>
+                            </li>
+                            <li>
+                                <label for="mesagge">SOLICITAR INFORMACION:</label>
+                                <textarea rows=4 id="mesagge" name="mesagge" placeholder="Escriba aqui su mensaje "></textarea>
+                            </li>
+                            <!-- Checkbox de Política de Privacidad -->
+                            <div class="privacidad">
+                                <input type="checkbox" id="privacidad" name="privacidad" required>
+                                <label for="privacidad">
+                                Acepto la <a href="/politica-privacidad" target="_blank">Política de Privacidad</a>
+                                </label>
+                            </div>
+                            <li class="liButtons">
+                                <button type="submit" > SOLICITAR PRESUPUESTO</button>
+                                <button type="reset" > BORRAR FORMULARIO</button>
+                            </li>
+                        </ul>
+                    </form>
+                </span>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <span>
+            <div id="div_footer">
+                <a href="/index.html"><img class="logofooter" src="/images/logo.jpg" alt="Logo" title="Logo" width="100px" height="100px"></a>
+                <a href="https://www.x.com"><img src="/images/x.png" class="redes" alt="whatsapp" width="40px" height="40px"></a>
+                <a href="https://www.facebook.com"><img src="/images/facebook.jpeg" class="redes" alt="Facebook" width="40px" height="40px"></a>
+                <a href="https://www.instagram.com"><img src="/images/instagram.jpeg" class="redes" alt="Instagram" width="40px" height="40px"></a>
+                <div id="ubi">
+                    <a href="https://www.whatsapp.com"><img src="/images/viber.png" alt="telefono" width="20px" height="20px"> + 34 613 669 341 </a><br>
+                    <a href="https://www.gmail.com"><img src="/images/correo-electronico.png" alt="correo" width="20px" height="20px"> Brayan.dominguezp@gmail.com </a><br>
+                    <a href="https://maps.google.com"><img src="/images/ubicacion.png" alt="ubicacion" width="20px" height="20px"> Calle San Fernando 49 </a>
+                </div>
+            </div>
+            <div>
+                <p class="linea"> © 2026 AuraCode | Todos los derechos reservados | Construyendo el futuro bit a bit.</p>
+            </div>
+        </span>
+    </footer>
+</body>
+</html>

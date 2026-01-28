@@ -1,0 +1,690 @@
+@charset "utf-8"; /* Declaración de codificación de caracteres */
+
+/* Importación de Google Font "Open Sans" */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=LINE+Seed+JP&display=swap');
+
+/* Inicio del Documento CSS */
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------estiloscabezera-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Modificacion del margen del header */
+header{
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+/* Modificacion de la imagen logo de la pagina*/
+#img_header{
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+/* Diseño general del menu principal */
+#menu{
+    float: right;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    border-radius: 12px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    background-color: rgba(20, 40, 70, 0.45);
+}
+
+/* Diseño de los botones inicio, productos y presupuesto */
+.tres{
+    color:linear-gradient(to bottom, white 20%, #2a5c85 80%);
+    margin-right: 30px;
+    margin-left: 20px;
+    color: rgb(64, 133, 252);
+}
+
+/* Diseño de botones al pasar el mouse encima */
+.tres:hover{
+    color: white;
+    font-size: 21px;
+    display: inline;
+    border-bottom: 2px solid #233f7f;
+    text-shadow: 2px 4px #233f7f;
+    padding-bottom: 4px;
+    
+}
+
+/* Separacion de boton presupuesto de contacto*/
+.der{
+    margin-right: 130px;
+}
+
+/* Diseño del boton contacto */
+.contac{
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: rgb(240, 242, 246);
+    border-radius: 8px;
+    padding-inline: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 0,3px solid black;
+    background: rgb(64, 133, 252)
+}
+
+/* Creacion de boton al estar activo */
+.active{
+    color: white;
+    font-size: 21px;
+    display: inline;
+    border-bottom: 2px solid #3665d4;
+}
+
+/* Decoracion general de los botones */
+a{
+    text-decoration: none;
+    color:rgb(64, 133, 252);
+}
+
+/* Animacion al pasar el mouse encima */
+a:hover{
+    color: #2c9ac9;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------estilosindex-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos generales del body y html*/
+html, body{
+    background: linear-gradient( 135deg, #15213d 40%,#31476a 60%);
+    background-attachment: fixed;
+	margin:0 auto;
+	width:980px;
+	font-size:13px;
+	color:rgb(223, 225, 230);
+	font-family: Helvetica, sans-serif;
+	background-size:100% auto;
+	line-height:18px;
+}
+/* Modificacion del div principal */
+#div_principal{
+    height:auto;
+	border-radius: 12px;
+    background-color: rgba(26, 42, 69, 0.88);
+    backdrop-filter: blur(8px);
+	margin: 8px;
+    line-height: normal;
+	padding: 30px;
+    padding-top: 5px;
+}
+
+/* Separacion del borde */
+.first{
+    padding-left: 20px;
+}
+
+/* Edicion de imagenes */
+#img_der{
+    float:right;
+	margin-left: 20px;
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Separacion y modificacion al borde */
+.princ{
+    padding-right: 500px;
+    margin-bottom: 20px;
+}
+
+/* Modificación del comportamiento de los encabezados */
+/* Encabezado 1*/
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: left;
+    font-family: "LINE Seed JP", sans-serif;
+}
+/* Encabezado 2*/
+h2 {
+    margin-top: 0px;
+	font-family: 'Open Sans', sans-serif;
+    color: #f2f2f2;
+    border-radius: 8px;
+    padding: auto;
+    margin-left: auto;
+}
+/* Encabezado 3*/
+h3{
+    font-size: 35px;
+    margin-bottom: auto
+}
+/* Encabezado 4*/
+h4{
+    font-size: 20px;
+}
+
+/* Diseño de los cuadros principales del index */
+.cuadros{
+    padding-left: 15px;
+    padding-top: 10px;
+    display: flex;
+}
+/* Diseño internos de los cuadros principales del index */
+.cubo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid white;
+}
+/* Modificaion interna de los cubos */
+.cubo h4 {
+    padding-left: 5px;
+    font-size: 18px;
+    margin-bottom: auto;
+}
+.cubo h1 {
+    padding-left: 30px;
+}
+.cubo p {
+    padding-top: 10px;
+    padding-right: 4px;
+    padding-left: 8px;
+    margin-top: auto;
+    font-size: 15px;
+    text-align: left;
+    color: #cfd2ff;
+}
+/* Mini logos */
+.minilog{
+    position: absolute;
+    margin-top: 27px;
+    margin-left: 10px;
+}
+
+/* Mini logo en la parte de datos de interes */
+.segundo{
+    padding-top: 63px;
+}
+
+/* Ajuste de imagenes */
+/* Imagen en los datos de interes */
+.imgizq{
+    position: absolute;
+    align-items: center;
+    padding-left: 210px;
+}
+
+/* Modificacion general de los datos de interes*/
+.dos{
+    padding-left: 15px;
+    padding-top: 10px;
+    display: flex;
+}
+
+/* Modificacion de la distacia de los parrafos de datos de interes */
+.lineas p{
+    margin-top: 19px;
+    padding-left: 40px;
+}
+
+/* Alineacion del texto final del section */
+.idea{
+    text-align: center;
+    line-height: 30px;
+}
+/* Modificacion del parrafo */
+.idea p{
+    font-size: 18px;
+    color: #cfd2ff;
+}
+
+/* ANIMACION DE IMAGEN */
+@keyframes float{
+    0%, 100% { transform: translateY(10); } 
+    50% { transform: translateY(-20px)}
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------estilospresupuesto-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Ubicacion del titulo del formulario */
+.titulo{
+    border: 1px solid #cfd2ff;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 20px;
+    width: 400px;
+}
+
+/* Edicion de imagenes */
+#img-formu{
+    position: absolute;
+	margin-left: 520px;
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Diseño general del formulario */
+#formu{
+    margin-top: 100px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+/* Ajuste de texto al inicio del formulario */
+ol{
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Modificacion de la lista del formulario */
+.flex-outer li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+/* Modificacion de los label del formulario*/
+.flex-outer li label{
+    padding: 6px;
+    font-weight: 900;
+    flex: 0 0 120px;
+    max-width: 1500px;
+}
+
+/* esta es la altura en la caja de texto */
+.flex-outer li input{
+    padding: 5px;
+    background-color: rgb(241, 240, 240);
+}
+
+/* Ajuste de las cajas de texto del formulario */
+.flex-outer > li > label + *{
+    flex: 1 0 200px;
+}
+
+/* Modificacion y ajuste de los botones del formulario */
+.flex-outer .liButtons button{
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: rgb(240, 242, 246);
+    border-radius: 8px;
+    padding-inline: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-right: 10px;
+    background: rgb(64, 133, 252)
+}
+/* Modificacion al pasar el mouse encima  */
+.flex-outer .liButtons button:hover{
+    color: #2c9ac9;
+    cursor: pointer;
+}
+
+/* Modificaion de la politica de privacidad */
+.flex-outer .privacidad{
+    margin-left: 330px;
+}
+
+/* Modificaion del borde de los botones */
+button{
+    border-radius: 8px;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------estilosproductos-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Edicion del header de productos */
+/* Edicion titulo */
+.produc h1{
+    text-align: center;
+}
+
+/* Edicion parrafo*/
+.produc p{
+    font-size: 18px;
+    color: #cfd2ff;
+    text-align: center;
+}
+
+/* Edicion de la caja de productos */
+.caja{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    height: 470px;
+}
+
+/* Edicion del titulo en caja de productos */
+/* Titulo h4*/
+.caja h4{
+    text-align: center;
+}
+
+/* Titulo h3*/
+.caja h3{
+    margin-top: 278px;
+    margin-left: 130px;
+    font-size: 30px;
+    border-bottom: 1px solid #cfd2ff;
+}
+
+/* Edicion de parrafo en caja de productos */
+.caja p{
+    margin-top: 210px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Modificacion imagen */
+.pages{
+    position: absolute;
+    border-radius: 12px;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+/* Modificacion precio */
+.precio{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 60px;
+    font-size: 20px;
+}
+
+/* Modificacion de lista de lo que incluye */
+.caja ul {
+    border: 1px solid #cfd2ff;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style-type:initial;
+    line-height: 25px;
+}
+
+/* Edicion de los botones de las cajas centrales de productos */
+.boton{
+    margin-left: 50px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+/* Modificacion de la caja final de productos*/
+.elegir{
+    margin-top: 30px;
+    margin-left: 160px;
+    border: 1px solid #cfd2ff;
+    border-radius: 12px;
+    padding-bottom: 15px;
+    width: 600px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------estiloscontacto-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Edicion del header de contacto*/
+.conexion{
+    line-height: 20px;
+    margin-left: 50px;
+}
+
+/* Edicion parrafo*/
+.conexion p{
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Ajuste de la informacion de contacto */
+.contactanos{
+    border: 1px solid #cfd2ff;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-left: 120px;
+    width: 700px;
+}
+
+/* Diseño de parte derecha de la info del contacto */
+.derecha{
+    position: absolute;
+    margin-left: 350px;
+    width: 350px;
+}
+
+/* Modificacion del formulario*/
+#formudos{
+    margin-left: 0px;
+}
+
+/* Modificacion del titulo de la derecha */
+.ulist ol h2{
+    border: 1px solid;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 90px;
+    margin-bottom: 30px;
+}
+
+/* Quitamos los puntos de lista */
+.ulist li{
+    list-style: none;
+}
+
+/* Ajuste de formulario */
+.derecha input{
+    margin-bottom: 30px ;
+}
+
+/* Nombre */
+.derecha #name{
+    border-radius: 8px;
+    border: 1px solid white;
+    color: #f2f2f2;
+    padding: 8px;
+    background-color: transparent;
+    width: 250px;
+}
+
+/* Correo electronico */
+.derecha #email{
+    border-radius: 8px;
+    border: 1px solid white;
+    color: #f2f2f2;
+    padding: 8px;
+    background-color: transparent;
+    width: 250px;
+}
+
+/* Asunto */
+.derecha #asunto{
+    border-radius: 8px;
+    border: 1px solid white;
+    color: #f2f2f2;
+    padding: 8px;
+    background-color: transparent;
+    width: 250px;
+}
+
+/* Mensaje */
+.derecha #mesagge{
+    border-radius: 8px;
+    border: 1px solid white;
+    color: #f2f2f2;
+    padding: 8px;
+    background-color: transparent;
+    width: 250px;
+}
+
+/* Modificaion de la politica de privacidad de la derecha */
+.ulist .privacidad{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+/* Boton de envio de mensaje */
+.derecha button{
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: rgb(240, 242, 246);
+    border-radius: 8px;
+    padding-inline: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 0px;
+    margin-left: 60px;
+    background: rgb(64, 133, 252)
+}
+
+/* Edicion al pasar el mouse encima */
+.derecha button:hover{
+    color: #2c9ac9;
+    cursor: pointer;
+}
+
+/* Diseño de parte izquierda de la info del contacto */
+.izquierda{
+    border-right: 1px solid #cfd2ff;
+    position: relative;
+    margin-right: 350px;
+    padding: 15px;
+}
+
+/* Titulos de la izquierda */
+.izquierda h2{
+    font-size: 23;
+    margin: 0%;
+    padding-left: 15px;
+}
+
+/* Imagenes de la izquierda */
+.izquierda img{
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 12px;
+}
+
+/* Imagen logo central izquierda */
+#logo-central{
+    margin: 10px;
+    margin-left: 40px;
+}
+
+/* Parrafos de la izquierda */
+.izquierda p{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    text-align: left;
+    font-size: 15px;
+    border-bottom: 1px solid grey;
+}
+
+/* Links de la izquierda */
+.izquierda a{
+    color:#f2f2f2;
+    font-size: 15px;
+}
+
+/* Modificacion al pasar el mouse encima del link */
+.izquierda a:hover{
+    color:#3665d4;
+}
+
+/* Modificacion de los logos de contacto */
+.logos-cen{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+/* Separacion de logos de los links */
+.icono{
+    margin-right: 10px;
+}
+
+/* Edicion de las redes sociales a la izquierda */
+.redes-min h2{
+    margin-bottom: 10px;
+}
+
+/* Modificacion de los logos de las redes */
+.redes-min div{
+    margin-left: 50px;
+}
+.redes-min img{
+    border: 1px solid ;
+    align-items: center;
+    margin-left: 20px;
+}
+
+/* Modificacion de la parte de la ubicacion */
+.maps{
+    border: 1px solid grey;
+    border-radius: 12px;
+}
+
+/* Ajuste de la imagen de ubicación */
+#img_cen {
+    border-radius: 12px;
+    margin: 20px;
+    margin-left: 70px;
+}
+
+/* Ajuste del texto debajo de la imagen de ubicacion */
+.maps h2{
+    border-top: 1px solid grey;
+    border-radius: 0%;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 6px;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------estilosfooter-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Diseño general del footer */
+#div_footer{
+    padding-left: 20px;
+    font-size: 12px;
+    margin-top: 20px;
+    line-height: 5px;
+}
+
+/* Diseño de los botones de las redes */
+.redes{
+	float: right;
+    margin-top: 30px;
+	margin-right: 10px;
+    border-radius: 8px;
+}
+
+/* Diseño de links de contacto */
+#ubi{
+    float: right;
+    padding-top: 20px;
+    margin-right: 220px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/* Decoracion de logo en el footer */
+.logofooter{
+    border-radius: 12px;
+}
+
+/* Decoracion y maodificacion */
+.linea{
+    margin-top: 25px;
+    border-top: 3px solid black;
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(64, 133, 252);
+    font-size: 15px;
+}
