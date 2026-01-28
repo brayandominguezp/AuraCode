@@ -1,3 +1,6 @@
 # AuraCode
 Pagina web de AuraCode 
- https://brayandominguezp.github.io/AuraCode/
+## Repositorio en GitHub 
+
+## Sitio web en GitHub Pages
+https://brayandominguezp.github.io/AuraCode/
