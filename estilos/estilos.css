@@ -37,7 +37,6 @@ header{
 
 /* Diseño de los botones inicio, productos y presupuesto */
 .tres{
-    color:linear-gradient(to bottom, white 20%, #2a5c85 80%);
     margin-right: 30px;
     margin-left: 20px;
     color: rgb(64, 133, 252);
@@ -68,8 +67,9 @@ header{
     padding-inline: 30px;
     padding-top: 7px;
     padding-bottom: 7px;
-    border: 0,3px solid black;
-    background: rgb(64, 133, 252)
+    border: 0 solid black;
+    background: rgb(64, 133, 252);
+	margin-left: 3px;
 }
 
 /* Creacion de boton al estar activo */
@@ -95,16 +95,24 @@ a:hover{
 
 /* Estilos generales del body y html*/
 html, body{
+	display: flex;
+	flex-direction: column;
     background: linear-gradient( 135deg, #15213d 40%,#31476a 60%);
     background-attachment: fixed;
 	margin:0 auto;
 	width:980px;
+	min-height: 100vh;
 	font-size:13px;
 	color:rgb(223, 225, 230);
 	font-family: Helvetica, sans-serif;
 	background-size:100% auto;
 	line-height:18px;
 }
+
+main{
+	flex: 1;
+}
+
 /* Modificacion del div principal */
 #div_principal{
     height:auto;
@@ -144,12 +152,11 @@ h1{
     font-family: "LINE Seed JP", sans-serif;
 }
 /* Encabezado 2*/
-h2 {
+h4 {
     margin-top: 0px;
 	font-family: 'Open Sans', sans-serif;
     color: #f2f2f2;
     border-radius: 8px;
-    padding: auto;
     margin-left: auto;
 }
 /* Encabezado 3*/
@@ -158,7 +165,7 @@ h3{
     margin-bottom: auto
 }
 /* Encabezado 4*/
-h4{
+h2{
     font-size: 20px;
 }
 
@@ -183,14 +190,13 @@ h4{
 /* Modificaion interna de los cubos */
 .cubo h4 {
     padding-left: 5px;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: auto;
 }
 .cubo h1 {
     padding-left: 30px;
 }
 .cubo p {
-    padding-top: 10px;
     padding-right: 4px;
     padding-left: 8px;
     margin-top: auto;
@@ -201,8 +207,8 @@ h4{
 /* Mini logos */
 .minilog{
     position: absolute;
-    margin-top: 27px;
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
 }
 
 /* Mini logo en la parte de datos de interes */
@@ -242,9 +248,14 @@ h4{
     color: #cfd2ff;
 }
 
+.idea h2{
+	font-size: 35px;
+	margin-bottom: auto;
+}
+
 /* ANIMACION DE IMAGEN */
 @keyframes float{
-    0%, 100% { transform: translateY(10); } 
+    0%, 100% { transform: translateY(10px); } 
     50% { transform: translateY(-20px)}
 }
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------estilospresupuesto-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -267,13 +278,16 @@ h4{
 
 /* Diseño general del formulario */
 #formu{
-    margin-top: 100px;
     margin-left: 0px;
     padding-left: 0px;
 }
 
 /* Ajuste de texto al inicio del formulario */
-ol{
+.texto{
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 100px;
+	margin-bottom: auto;
     padding-top: 10px;
     text-align: center;
 }
@@ -363,8 +377,8 @@ button{
 }
 
 /* Edicion del titulo en caja de productos */
-/* Titulo h4*/
-.caja h4{
+/* Titulo h2*/
+.caja h2{
     text-align: center;
 }
 
@@ -466,9 +480,11 @@ button{
 /* Modificacion del titulo de la derecha */
 .ulist ol h2{
     border: 1px solid;
+	border-radius: 10px;
     font-size: 20px;
     text-align: center;
-    margin-right: 90px;
+    margin-right: 70px;
+	margin-left: 50px;
     margin-bottom: 30px;
 }
 
@@ -558,7 +574,7 @@ button{
 
 /* Titulos de la izquierda */
 .izquierda h2{
-    font-size: 23;
+    font-size: 23px;
     margin: 0%;
     padding-left: 15px;
 }
